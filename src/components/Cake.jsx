@@ -18,7 +18,7 @@ function Cake() {
       try {
         const stream = await navigator.mediaDevices.getUserMedia({
           audio: {
-            echoCancellation: true,
+            echoCancellation: false,
             noiseSuppression: false,
             autoGainControl: false,
           },
@@ -45,8 +45,8 @@ function Cake() {
       const avgLowFreq =
         lowFreqValues.reduce((sum, value) => sum + value, 0) / lowFreqValues.length;
 
-      const blowThreshold = 90; 
-      const requiredDuration = 1200; 
+      const blowThreshold = 50; 
+      const requiredDuration = 1000; 
 
       if (avgLowFreq > blowThreshold) {
         if (!blowStartTime) {
@@ -55,9 +55,7 @@ function Cake() {
           setCandlesBlownOut(true);
         }
       } else {
-        if (blowStartTime && performance.now() - blowStartTime > 300) {
-          blowStartTime = null;
-        }
+        blowStartTime = null;
       }
 
       requestAnimationFrame(detectBlow);
