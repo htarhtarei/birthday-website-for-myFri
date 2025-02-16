@@ -36,7 +36,7 @@ function Card() {
       <div id="card" className={`${cardClass}`} onClick={toggleCard}>     
         <div id="card-inside">
           <div className="wrap">
-            <h4>Happy Birthday, -----🎉!</h4>
+            <h4>Happy Birthday, Oo Si🎉!</h4>
             <p>You're not just my best friend—you’re like family to me. Thank you for always being there, listening to all my shit ,making me laugh and supporting me no matter what. I hope this year brings you endless happiness, success, and all the amazing things you deserve. Enjoy your special day to the fullest! 🎈🥳 </p>
             {/* <p className="text-[.9rem] font-semibold">PS:You're the best best best best  friend that I've ever had.</p> */}
             <p className="signed">Ma Htar</p>
