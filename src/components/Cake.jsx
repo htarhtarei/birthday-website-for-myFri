@@ -9,7 +9,7 @@ function Cake() {
   const [candlesBlownOut, setCandlesBlownOut] = useState(false);
   const [micPermissionGranted, setMicPermissionGranted] = useState(false);
 
-  useEffect(() => {
+  useEffect(() => { 
     let audioContext;
     let analyser;
     let dataArray;
@@ -106,11 +106,6 @@ function Cake() {
                 </textPath>
               </text>
             </svg>
-            <Link to="/present" className="flex justify-center items-center">
-              <p className="absolute top-[30rem] xs:top-[36rem] s:top-[40rem] px-7 py-3 bg-customBlue text-white rounded-full hover:bg-blue-600 font-medium text-base text-center ">
-                Next Page
-              </p>
-            </Link>
           </motion.div>
         )}
         <div className="relative z-10">

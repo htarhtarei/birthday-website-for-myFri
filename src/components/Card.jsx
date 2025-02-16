@@ -29,25 +29,17 @@ function Card() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center overflow-clip">
-    <div className="w-[400px]  h-screen flex flex-col items-center justify-center">
+    <div className="w-[400px] h-screen flex flex-col items-center justify-center">
       <motion.div  initial={{ opacity: 0, visibility: "hidden" }}
           animate={{ opacity: 1, visibility: "visible" }}
           transition={{duration: 1.2}}>
       <div id="card" className={`${cardClass}`} onClick={toggleCard}>     
         <div id="card-inside">
           <div className="wrap">
-            <p>Happy Birthday, John Doe!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque delectus dolore recusandae eveniet dicta. Corrupti.</p>
-            <p>
-              I hope you have a very blessed birthday!
-            </p>
-            <p>
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <p className="signed">Jane Doe</p>
+            <h4>Happy Birthday, -----🎉!</h4>
+            <p>You're not just my best friend—you’re like family to me. Thank you for always being there, listening to all my shit ,making me laugh and supporting me no matter what. I hope this year brings you endless happiness, success, and all the amazing things you deserve. Enjoy your special day to the fullest! 🎈🥳 </p>
+            {/* <p className="text-[.9rem] font-semibold">PS:You're the best best best best  friend that I've ever had.</p> */}
+            <p className="signed">Ma Htar</p>
           </div>
         </div>
 

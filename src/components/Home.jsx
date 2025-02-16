@@ -6,7 +6,7 @@ function Home() {
     const [visibleCount, setVisibleCount] = useState(1)
     const navigate = useNavigate()
     const sentences = [
-    "Hi John Doe",
+    "Hi Bestie",
     "I have something to show you:)"
   ]
 
@@ -14,7 +14,7 @@ function Home() {
     if (visibleCount < sentences.length) {
       setVisibleCount(visibleCount + 1)
     } else {
-      navigate('/pictures')
+      navigate('/card')
     }
   }
   return (
@@ -29,7 +29,7 @@ function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.2 }}
-            className="text-4xl font-bold text-customBlue drop-shadow-lg"
+            className="text-4xl font-bold text-customBlue font-poppins drop-shadow-lg"
           >
             {sentence}
           </motion.p>

@@ -13,7 +13,7 @@
   
   .wrap {
       padding: 1em;
-      height: 100%;
+      height: 100%; 
   }
   #card-front, #card-inside {
     width: 100%;
@@ -49,6 +49,12 @@
           3px 3px 0 rgba(255, 125, 125, 255);
       color: #FFF;
   }
+
+  #card h4{
+    font-size:20px;
+    font-weight:500;
+  }
+
   #card-inside {
       font-size: 1.1em;
       line-height: 1.4;
@@ -65,8 +71,8 @@
   }
   
   p.signed {
-      margin-top: 1.5em;
-      margin-left: 6.5em;
+      margin-top: 6em;
+      margin-left: 7.5em;
       text-align: center;
       font-family: 'Dancing Script', sans-serif;
       font-size: 1.5em;
@@ -161,22 +167,37 @@
     #card {
       max-width: 100%;
       perspective: 3000px;
+      width: 280px;
     }
   
     #card-front, #card-inside {
       width: 100%; 
+      height:400px;
       left: 0; 
     }
   
     #card h1 {
       font-size: 40px; 
     }
+
+    #card h4{
+      font-size:18px;
+    }
+    #card p{
+      font-size:15px;
+    }
   
     #card-front button {
       font-size: 1.2em; 
     }
+    p.signed {
+      margin-top: 1.5em;
+      margin-left: 12em;
+      text-align: center;
+      font-family: 'Dancing Script', sans-serif;
+  }
   
     .wrap {
-      padding: 1em; 
+      padding: .8em; 
     }
   }
